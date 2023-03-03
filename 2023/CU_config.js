@@ -84,7 +84,7 @@ var config_data = `
       "type": "bool",
       "crossedTape": "acc"
     },
-    { "name": "Mobility?",
+    { "name": "Mobility? (Did it move at all)",
       "code": "am",
       "type": "bool"
     },
@@ -101,7 +101,7 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
+    { "name": "Cycle Timer (Time it takes for the robot to go from the community to other-end of the field)",
       "code": "tct",
       "type": "cycle"
     },
@@ -114,8 +114,23 @@ var config_data = `
       "toggleClick": "true",
       "showFlip": "false",
       "showUndo": "false",
-      "shape": "circle 12 black red true",
-      "cycleTimer": "tct"
+      "shape": "circle 12 black red true"
+    },
+    { "name": "Played Defense?",
+      "code": "pd",
+      "type": "bool"
+    },
+    { "name": "Defense Rating",
+      "code": "dr",
+      "type": "radio",
+      "choices": {
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
+        "x": "Did not play defense"
+      },
+      "defaultValue": "x"
     },
     { "name": "Was Defended",
       "code": "wd",
@@ -142,7 +157,7 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Docking Timer",
+    { "name": "Docking Timer (Time it takes for robot to get on the charge station)",
       "code": "dt",
       "type": "timer"
     },
@@ -164,7 +179,7 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
+    { "name": "Driver Skill (Had a game plan, was adaptable, etc.)",
       "code": "ds",
       "type": "radio",
       "choices": {
@@ -179,19 +194,7 @@ var config_data = `
       "code": "ls",
       "type": "counter"
     },
-    { "name": "Defense Rating",
-      "code": "dr",
-      "type": "radio",
-      "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Speed Rating",
+    { "name": "Speed Rating (How fast they can score a game piece)",
       "code": "sr",
       "type": "radio",
       "choices": {
