@@ -5,25 +5,25 @@ var config_data = `
   "checkboxAs": "10",
   "enable_google_sheets": "true",
   "prematch": [
-    { "name": "Scouter Initials",
+    { "name": "Scouter-Initials",
+      "gsCol": "Scouter",
       "code": "s",
-      "gsCol": "scouter",
       "type": "scouter",
       "size": 5,
       "maxSize": 5,
       "required": "true"
     },
     { "name": "Event",
+      "gsCol": "EventCode",
       "code": "e",
-      "gsCol": "event",
       "type": "event",
       "defaultValue": "2022carv",
       "required": "true",
       "disabled": "true"
     },
     { "name": "Match Level",
+      "gsCol": "MatchLevel",
       "code": "l",
-      "gsCol": "level",
       "type": "level",
       "choices": {
         "qm": "Quals<br>",
@@ -34,16 +34,16 @@ var config_data = `
       "required": "true"
     },
     { "name": "Match #",
+      "gsCol": "MatchNumber",
       "code": "m",
-      "gsCol": "matchNum",
       "type": "match",
       "min": 1,
       "max": 100,
       "required": "true"
     },
     { "name": "Robot",
+      "gsCol": "Robot",
       "code": "r",
-      "gsCol": "robot",
       "type": "robot",
       "choices": {
         "r1": "Red-1",
@@ -56,16 +56,16 @@ var config_data = `
       "required":"true"
     },
     { "name": "Team #",
+      "gsCol": "TeamNumber",
       "code": "t",
-      "gsCol": "teamNum",
       "type": "team",
       "min": 1,
       "max": 99999
     },
     { "name": "Auto Start Position",
+      "gsCol": "AutoStartPose",
       "code": "as",
-      "gsCol": "autoStartPosition",
-      "type": "field_image",
+      "type": "clickable_image",
       "filename": "2023/field_image.png",
       "clickRestriction": "one",
       "shape": "circle 5 black red true"
@@ -73,8 +73,8 @@ var config_data = `
   ],
   "auton": [
     { "name": "Auto Scoring",
+      "gsCol": "AutoScored",
       "code": "asg",
-      "gsCol": "autoScoringGrid",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -84,24 +84,25 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Crossed Cable",
+    { "name": "Crossed Tape",
+      "gsCol": "AutoCrossedTape",
       "code": "acc",
-      "gsCol": "autoCrossedCable",
       "type": "bool"
     },
     { "name": "Crossed Charging Station",
+      "gsCol": "AutoCrossedChargingStation",
       "code": "acs",
-      "gsCol": "autoCrossedChargingStation",
-      "type": "bool"
+      "type": "bool",
+      "crossedTape": "acc"
     },
-    { "name": "Mobility?",
+    { "name": "Mobility? (Did it move at all)",
+      "gsCol": "AutoMobility",
       "code": "am",
-      "gsCol": "autoMobility",
       "type": "bool"
     },
     { "name": "Docked",
+      "gsCol": "AutoDocked",
       "code": "ad",
-      "gsCol": "autoDocked",
       "type":"radio",
       "choices": {
         "d": "Docked (not Engaged)<br>",
@@ -113,14 +114,14 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
+    { "name": "Cycle Timer (Time it takes for the robot to go from the community to other-end of the field)",
+      "gsCol": "CycleTimes",
       "code": "tct",
-      "gsCol": "cycleTimes",
       "type": "cycle"
     },
     { "name": "Grid Scoring",
+      "gsCol": "ScoredGrid",
       "code": "tsg",
-      "gsCol": "gridScoring",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -128,36 +129,48 @@ var config_data = `
       "toggleClick": "true",
       "showFlip": "false",
       "showUndo": "false",
-      "shape": "circle 12 black red true",
-      "cycleTimer": "tct"
+      "shape": "circle 12 black red true"
     },
-    { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
-      "gsCol": "feedCount",
-      "type": "counter"
-    },
-    { "name": "Was Defended",
-      "code": "wd",
-      "gsCol": "wasDefended",
+    { "name": "Played Defense?",
+      "gsCol": "PlayedDefense",
+      "code": "pd",
       "type": "bool"
     },
-    { "name": "Who Defended this bot<br>(Team #)",
+    { "name": "Defense Rating",
+      "gsCol": "DefenseRating",
+      "code": "dr",
+      "type": "radio",
+      "choices": {
+        "b": "Below Average<br>",
+        "a": "Average<br>",
+        "g": "Good<br>",
+        "e": "Excellent<br>",
+        "x": "Did not play defense"
+      },
+      "defaultValue": "x"
+    },
+    { "name": "Was Defended",
+      "gsCol": "WasDefended",
+      "code": "wd",
+      "type": "bool"
+    },
+    { "name": "Who Defended this bot",
+      "gsCol": "WhoDefended",
       "code": "who",
-      "gsCol": "defenderTeamNum",
       "type": "text"
     },
     { "name": "Smart Placement<br>(creates Links)",
+      "gsCol": "SmartLinks",
       "code": "lnk",
-      "gsCol": "smartPlacement",
       "type": "bool"
     },
-    { "name": "Floor Pick UP",
+    { "name": "Floor Pickup",
+      "gsCol": "FloorPickUp",
       "code": "fpu",
-      "gsCol": "floorPickUp",
       "type": "radio",
       "choices": {
-        "o": "Cone<br>",
-        "u": "Cube<br>",
+        "o": "Cones<br>",
+        "u": "Cubes<br>",
         "b": "Both<br>",
         "x": "Not Attempted"
       },
@@ -165,14 +178,14 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Docking Timer",
+    { "name": "Docking Timer (Time it takes for robot to get on the charge station)",
+      "gsCol": "DockingTime",
       "code": "dt",
-      "gsCol": "dockingTime",
       "type": "timer"
     },
     { "name": "Final Status",
+      "gsCol": "FinalState",
       "code": "fs",
-      "gsCol": "endgameStatus",
       "type":"radio",
       "choices": {
         "p": "Parked<br>",
@@ -184,15 +197,15 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
+      "gsCol": "NumOfRobotsDocked",
       "code": "dn",
-      "gsCol": "numOfRobotsDocked",
       "type": "counter"
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill",
+    { "name": "Driver Skill (Had a game plan, was adaptable, etc.)",
+      "gsCol": "DriverSkill",
       "code": "ds",
-      "gsCol": "driverSkill",
       "type": "radio",
       "choices": {
         "n": "Not Effective<br>",
@@ -203,31 +216,13 @@ var config_data = `
       "defaultValue": "x"
     },
     { "name": "Links Scored",
+      "gsCol": "LinksScored",
       "code": "ls",
-      "gsCol": "linksScored",
       "type": "counter"
     },
-    { "name": "Defense Rating",
-      "code": "dr",
-      "gsCol": "defenseRating",
-      "type": "radio",
-      "choices": {
-        "b": "Below Average<br>",
-        "a": "Average<br>",
-        "g": "Good<br>",
-        "e": "Excellent<br>",
-        "x": "Did not play defense"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Swerve drive?",
-      "code": "sd",
-      "gsCol": "swerveDrive",
-      "type": "bool"
-    },
-    { "name": "Speed Rating",
+    { "name": "Speed Rating (How fast they can score a game piece)",
+      "gsCol": "SpeedRating",
       "code": "sr",
-      "gsCol": "speedRating",
       "type": "radio",
       "choices": {
         "1": "1 (slow)<br>",
@@ -239,29 +234,23 @@ var config_data = `
       "defaultValue":"3"
     },
     { "name": "Died/Immobilized",
+      "gsCol": "DiedOrImmobile",
       "code": "die",
-      "gsCol": "diedOrImmobilized",
       "type": "bool"
     },
     { "name": "Tippy<br>(almost tipped over)",
+      "gsCol": "Tippy",
       "code": "tip",
-      "gsCol": "tippy",
       "type": "bool"
     },
-    { "name": "Dropped Cones (>2)",
+    { "name": "Mismanaged GamePieces (>2)",
+      "gsCol": "DroppedGamePieces",
       "code": "dc",
-      "gsCol": "droppedCones",
-      "type": "bool"
-    },
-    { "name": "Make good<br>alliance partner?",
-      "tooltip": "Would you want this robot on your alliance in eliminations?",
-      "code": "all",
-      "gsCol": "goodPartners",
       "type": "bool"
     },
     { "name": "Comments",
+      "gsCol": "Comments",
       "code": "co",
-      "gsCol": "comments",
       "type": "text",
       "size": 15,
       "maxSize": 50
