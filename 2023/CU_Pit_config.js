@@ -13,40 +13,36 @@ var config_data = `
       "type": "number",
       "defaultValue": "0"
     },
+    { "name": "Length",
+      "code": "len",
+      "type": "number",
+      "defaultValue": "0"
+    },
     { "name": "Weight",
       "code": "wei",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Drivetrain",
-      "code": "drv",
+    { "name": "Swerve",
+      "code": "swe",
+      "type": "bool"
+    },
+    { "name": "Type of Serve",
+      "code": "typ",
       "type": "radio",
       "choices": {
-        "s": "Swerve<br>",
-        "w": "West Coast/Tank<br>",
-        "b": "Butterfly/Grashopper<br>",
-        "m": "Mechanum<br>",
-        "o": "Other"
+        "r": "REV<br>",
+        "w": "West Coast<br>",
+        "a": "SDS<br>",
+        "x": "No Swerve"
       },
-      "defaultValue": "o"
+      "defaultValue": "x"
     },
     { "name": "Other Drivetrain",
       "code": "odt",
       "type": "text",
       "size": 20,
       "maxSize": 50
-    },
-    { "name": "Swerve Ratio",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "L1<br>",
-        "2": "L2<br>",
-        "3": "L3<br>",
-        "4": "L4<br>",
-        "x": "Not Swerve"
-      },
-      "defaultValue":"x"
     },
     { "name": "Drivetrain Motor",
       "code": "mot",
@@ -59,10 +55,6 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "# of Batteries",
-      "code": "nob",
-      "type": "number"
-    },
     { "name": "Floor pickup Cones",
       "code": "fco",
       "type": "bool"
@@ -71,11 +63,11 @@ var config_data = `
       "code": "fcu",
       "type": "bool"
     },
-    { "name": "Cross Charging Station",
-      "code": "ccs",
+    { "name": "Does arm need to be extended to drive up to score",
+      "code": "arm",
       "type": "bool"
     },
-    { "name": "Autos",
+    { "name": "Autos (Extremely brief description ex. score cone & park",
       "code": "aut",
       "type": "text",
       "size": 20,

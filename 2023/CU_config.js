@@ -75,6 +75,10 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Mobility? (Did it move at all)",
+      "code": "am",
+      "type": "bool"
+    },
     { "name": "Crossed Tape",
       "code": "acc",
       "type": "bool"
@@ -83,10 +87,6 @@ var config_data = `
       "code": "acs",
       "type": "bool",
       "crossedTape": "acc"
-    },
-    { "name": "Mobility? (Did it move at all)",
-      "code": "am",
-      "type": "bool"
     },
     { "name": "Docked",
       "code": "ad",
@@ -105,7 +105,7 @@ var config_data = `
       "code": "tct",
       "type": "cycle"
     },
-    { "name": "Grid Scoring",
+    { "name": "Grid Scoring (Left is closest to the substation)",
       "code": "tsg",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
@@ -190,7 +190,7 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Links Scored",
+    { "name": "Links Scored (Total links scored for the team)",
       "code": "ls",
       "type": "counter"
     },
