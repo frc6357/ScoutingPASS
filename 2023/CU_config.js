@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Charged Up",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter-Initials",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -101,10 +101,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer (Time it takes for the robot to go from the community to other-end of the field)",
-      "code": "tct",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring (Left is closest to the substation)",
       "code": "tsg",
       "type": "clickable_image",
