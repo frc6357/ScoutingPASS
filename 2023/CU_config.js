@@ -163,21 +163,6 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill (Had a game plan, was adaptable, etc.)",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Links Scored (Total links scored for the team)",
-      "code": "ls",
-      "type": "counter"
-    },
     { "name": "Speed Rating (How fast they can score a game piece)",
       "code": "sr",
       "type": "radio",
@@ -192,10 +177,6 @@ var config_data = `
     },
     { "name": "Died/Immobilized",
       "code": "die",
-      "type": "bool"
-    },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
       "type": "bool"
     },
     { "name": "Mismanaged GamePieces (>2)",
