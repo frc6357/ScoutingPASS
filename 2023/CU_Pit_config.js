@@ -75,7 +75,7 @@ var config_data = `
       "code": "arm",
       "type": "bool"
     },
-    { "name": "Autos (Extremely brief description ex. score cone & park",
+    { "name": "Autos (Extremely brief description ex. score cone & park)",
       "code": "aut",
       "type": "text",
       "size": 20,
