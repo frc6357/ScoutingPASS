@@ -11,17 +11,14 @@ var config_data = `
     { "name": "Width (inches)",
       "code": "wid",
       "type": "number",
-      "defaultValue": "0"
     },
     { "name": "Length (inches)",
       "code": "len",
       "type": "number",
-      "defaultValue": "0"
     },
     { "name": "Weight (pounds)",
       "code": "wei",
       "type": "number",
-      "defaultValue": "0"
     },
     { "name": "Swerve",
       "code": "swe",
