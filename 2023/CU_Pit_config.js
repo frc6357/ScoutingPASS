@@ -8,17 +8,17 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
-    { "name": "Width",
+    { "name": "Width (inches)",
       "code": "wid",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Length",
+    { "name": "Length (inches)",
       "code": "len",
       "type": "number",
       "defaultValue": "0"
     },
-    { "name": "Weight",
+    { "name": "Weight (pounds)",
       "code": "wei",
       "type": "number",
       "defaultValue": "0"
@@ -61,6 +61,14 @@ var config_data = `
     },
     { "name": "Floor pickup Cubes",
       "code": "fcu",
+      "type": "bool"
+    },
+    { "name": "Pickup tipped cones",
+      "code": "ptc",
+      "type": "bool"
+    },
+    { "name": "Pickup from double-substation",
+      "code": "dss",
       "type": "bool"
     },
     { "name": "Does arm need to be extended to drive up to score",
