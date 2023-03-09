@@ -145,10 +145,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Docking Timer (Time it takes for robot to get on the charge station)",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
