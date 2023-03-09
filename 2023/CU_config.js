@@ -182,12 +182,6 @@ var config_data = `
     { "name": "Mismanaged GamePieces (>2)",
       "code": "dc",
       "type": "bool"
-    },
-    { "name": "Comments",
-      "code": "co",
-      "type": "text",
-      "size": 15,
-      "maxSize": 50
     }
   ]
 }`;
