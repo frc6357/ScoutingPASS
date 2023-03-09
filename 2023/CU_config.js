@@ -4,7 +4,7 @@ var config_data = `
   "page_title": "Charged Up",
   "checkboxAs": "10",
   "prematch": [
-    { "name": "Scouter-Initials",
+    { "name": "Scouter Initials",
       "code": "s",
       "type": "scouter",
       "size": 5,
@@ -101,10 +101,6 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer (Time it takes for the robot to go from the community to other-end of the field)",
-      "code": "tct",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring (Left is closest to the substation)",
       "code": "tsg",
       "type": "clickable_image",
@@ -132,14 +128,6 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Was Defended",
-      "code": "wd",
-      "type": "bool"
-    },
-    { "name": "Who Defended this bot",
-      "code": "who",
-      "type": "text"
-    },
     { "name": "Smart Placement<br>(creates Links)",
       "code": "lnk",
       "type": "bool"
@@ -157,10 +145,6 @@ var config_data = `
     }
   ],
   "endgame": [
-    { "name": "Docking Timer (Time it takes for robot to get on the charge station)",
-      "code": "dt",
-      "type": "timer"
-    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
@@ -179,21 +163,6 @@ var config_data = `
     }
   ],
   "postmatch": [
-    { "name": "Driver Skill (Had a game plan, was adaptable, etc.)",
-      "code": "ds",
-      "type": "radio",
-      "choices": {
-        "n": "Not Effective<br>",
-        "a": "Average<br>",
-        "v": "Very Effective<br>",
-        "x": "Not Observed"
-      },
-      "defaultValue": "x"
-    },
-    { "name": "Links Scored (Total links scored for the team)",
-      "code": "ls",
-      "type": "counter"
-    },
     { "name": "Speed Rating (How fast they can score a game piece)",
       "code": "sr",
       "type": "radio",
@@ -210,19 +179,9 @@ var config_data = `
       "code": "die",
       "type": "bool"
     },
-    { "name": "Tippy<br>(almost tipped over)",
-      "code": "tip",
-      "type": "bool"
-    },
     { "name": "Mismanaged GamePieces (>2)",
       "code": "dc",
       "type": "bool"
     },
-    { "name": "Comments",
-      "code": "co",
-      "type": "text",
-      "size": 15,
-      "maxSize": 50
-    }
   ]
 }`;
