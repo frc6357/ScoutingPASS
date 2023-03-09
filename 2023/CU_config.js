@@ -132,6 +132,10 @@ var config_data = `
       "code": "lnk",
       "type": "bool"
     },
+    { "name": "Pickup Tipped Cones",
+      "code": "tip",
+      "type": "bool"
+    },
     { "name": "Floor Pickup",
       "code": "fpu",
       "type": "radio",
