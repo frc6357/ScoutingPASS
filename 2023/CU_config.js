@@ -128,14 +128,6 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Was Defended",
-      "code": "wd",
-      "type": "bool"
-    },
-    { "name": "Who Defended this bot",
-      "code": "who",
-      "type": "text"
-    },
     { "name": "Smart Placement<br>(creates Links)",
       "code": "lnk",
       "type": "bool"
