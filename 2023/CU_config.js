@@ -83,7 +83,7 @@ var config_data = `
       "code": "acc",
       "type": "bool"
     },
-    { "name": "Crossed Charging Station",
+    { "name": "Picked up game piece",
       "code": "acs",
       "type": "bool",
       "crossedTape": "acc"
