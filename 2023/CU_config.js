@@ -164,6 +164,7 @@ var config_data = `
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
       "type": "counter",
+      "min": 0,
       "max": 3
     }
   ],
