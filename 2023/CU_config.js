@@ -64,7 +64,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auto Scoring",
+    { "name": "Auto Scoring (Left is closest to the substation)",
       "code": "asg",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
@@ -163,7 +163,8 @@ var config_data = `
     },
     { "name": "Total # of alliance<br>robots docked/engaged",
       "code": "dn",
-      "type": "counter"
+      "type": "counter",
+      "max": 3
     }
   ],
   "postmatch": [
