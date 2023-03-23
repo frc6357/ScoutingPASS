@@ -134,6 +134,19 @@ var config_data = `
       },
       "defaultValue": "x"
     },
+    { "name": "Substation Pickup",
+      "code": "spu",
+      "type": "radio",
+      "choices": {
+        "o": "Cones<br>",
+        "u": "Cubes<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+    }
+  ],
+  "endgame": [
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
@@ -146,8 +159,6 @@ var config_data = `
       },
       "defaultValue": "x"
     }
-  ],
-  "endgame": [
   ],
   "postmatch": [
     { "name": "Died/Immobilized",
