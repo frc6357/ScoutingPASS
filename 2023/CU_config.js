@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2022txdri",
+      "defaultValue": "2023txbel",
       "required": "true",
       "disabled": "true"
     },
@@ -64,7 +64,7 @@ var config_data = `
     }
   ],
   "auton": [
-    { "name": "Auto Scoring",
+    { "name": "Auto Scoring (Left is closest to the substation)",
       "code": "asg",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
