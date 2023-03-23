@@ -75,19 +75,6 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Mobility? (Did it move at all)",
-      "code": "am",
-      "type": "bool"
-    },
-    { "name": "Crossed Tape",
-      "code": "acc",
-      "type": "bool"
-    },
-    { "name": "Crossed Charging Station",
-      "code": "acs",
-      "type": "bool",
-      "crossedTape": "acc"
-    },
     { "name": "Docked",
       "code": "ad",
       "type":"radio",
@@ -146,9 +133,7 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    }
-  ],
-  "endgame": [
+    },
     { "name": "Final Status",
       "code": "fs",
       "type":"radio",
@@ -160,25 +145,11 @@ var config_data = `
         "x": "Not attempted"
       },
       "defaultValue": "x"
-    },
-    { "name": "Total # of alliance<br>robots docked/engaged",
-      "code": "dn",
-      "type": "counter"
     }
   ],
+  "endgame": [
+  ],
   "postmatch": [
-    { "name": "Speed Rating (How fast they can score a game piece)",
-      "code": "sr",
-      "type": "radio",
-      "choices": {
-        "1": "1 (slow)<br>",
-        "2": "2<br>",
-        "3": "3<br>",
-        "4": "4<br>",
-        "5": "5 (fast)"
-      },
-      "defaultValue":"3"
-    },
     { "name": "Died/Immobilized",
       "code": "die",
       "type": "bool"
