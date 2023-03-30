@@ -56,9 +56,23 @@ var config_data = `
       "code": "sco",
       "type": "bool"
     },
-    { "name": "Do they have backup electronic components (pdh, roborio, motor controlles, etc.)?",
-      "code": "elc",
+    { "name": "Do they have backup roborio?",
+      "code": "rob",
       "type": "bool"
+    },
+    { "name": "Do they have backup PDH/PDP?",
+      "code": "pdh",
+      "type": "bool"
+    },
+    { "name": "Do they have backup motor controllers?",
+      "code": "mot",
+      "type": "bool"
+    },
+    { "name": "Which type of motor controllers",
+      "code": "cot",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
     },
     { "name": "Do they have a battery beak?",
       "code": "bat",
