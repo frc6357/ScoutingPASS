@@ -12,14 +12,6 @@ var config_data = `
       "code": "wid",
       "type": "number"
     },
-    { "name": "Length (inches)",
-      "code": "len",
-      "type": "number"
-    },
-    { "name": "Weight (pounds)",
-      "code": "wei",
-      "type": "number"
-    },
     { "name": "Swerve",
       "code": "swe",
       "type": "bool"
@@ -52,31 +44,43 @@ var config_data = `
       },
       "defaultValue":"x"
     },
-    { "name": "Floor pickup Cones",
-      "code": "fco",
+    { "name": "Did their comms fail at their last event?",
+      "code": "com",
       "type": "bool"
     },
-    { "name": "Floor pickup Cubes",
-      "code": "fcu",
+    { "name": "Do they have backup swerve modules/drivetrain motors?",
+      "code": "dri",
       "type": "bool"
     },
-    { "name": "Pickup tipped cones",
-      "code": "ptc",
+    { "name": "Do they have spare parts to fix their scoring mechanism?",
+      "code": "sco",
       "type": "bool"
     },
-    { "name": "Pickup from double-substation",
-      "code": "dss",
+    { "name": "Do they have backup electronic components (pdh, roborio, motor controlles, etc.)?",
+      "code": "elc",
       "type": "bool"
     },
-    { "name": "Does arm need to be extended to drive up to score",
-      "code": "arm",
+    { "name": "Do they have a battery beak?",
+      "code": "bat",
       "type": "bool"
     },
-    { "name": "Autos (Extremely brief description ex. score cone & park)",
-      "code": "aut",
+    { "name": "Wirestripper type",
+      "code": "wir",
       "type": "text",
       "size": 20,
-      "maxSize": 250
+      "maxSize": 50
+    },
+    { "name": "Allen Key type",
+      "code": "alk",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
+    { "name": "Screwdriver type",
+      "code": "scr",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
     }
   ],
   "auton": [
