@@ -65,7 +65,7 @@ var config_data = `
       "type": "bool"
     },
     { "name": "Do they have backup motor controllers?",
-      "code": "mot",
+      "code": "mtr",
       "type": "bool"
     },
     { "name": "Which type of motor controllers",
