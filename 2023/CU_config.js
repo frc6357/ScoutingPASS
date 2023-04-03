@@ -75,6 +75,10 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
+    { "name": "Did they taxi?",
+      "code": "am",
+      "type": "bool"
+    },
     { "name": "Docked",
       "code": "ad",
       "type":"radio",
@@ -163,6 +167,10 @@ var config_data = `
   "postmatch": [
     { "name": "Died/Immobilized",
       "code": "die",
+      "type": "bool"
+    },
+    { "name": "Tipped over",
+      "code": "ove",
       "type": "bool"
     },
     { "name": "Mismanaged GamePieces (>2)",

@@ -78,20 +78,26 @@ var config_data = `
       "code": "bat",
       "type": "bool"
     },
-    { "name": "Wirestripper type",
+    { "name": "Wirestripper brand",
       "code": "wir",
       "type": "text",
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Allen Key type",
+    { "name": "Allen Key brand",
       "code": "alk",
       "type": "text",
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Screwdriver type",
+    { "name": "Screwdriver brand",
       "code": "scr",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
+    { "name": "Wheel brand",
+      "code": "whe",
       "type": "text",
       "size": 20,
       "maxSize": 50
