@@ -44,6 +44,12 @@ var config_data = `
       },
       "defaultValue":"x"
     },
+    { "name": "How long have you had your drive team?",
+      "code": "tem",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
     { "name": "Did their comms fail at their last event?",
       "code": "com",
       "type": "bool"
