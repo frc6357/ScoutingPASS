@@ -44,15 +44,45 @@ var config_data = `
       },
       "defaultValue":"x"
     },
+    { "name": "What is their power wire connectors",
+      "code": "pwr",
+      "type": "radio",
+      "choices": {
+        "a": "Anderson<br>",
+        "w": "Wago<br>",
+        "d": "Direct Connect (Crimp or Sauter)<br>",
+        "x": "Other<br>"
+      },
+      "defaultValue":"x"
+    },
+    { "name": "Other power wire connectors",
+      "code": "opc",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
+    { "name": "What is their sensor canbus connectors",
+      "code": "can",
+      "type": "radio",
+      "choices": {
+        "a": "Anderson<br>",
+        "w": "Wago<br>",
+        "d": "Direct Connect (Crimp or Sauter)<br>",
+        "x": "Other<br>"
+      },
+      "defaultValue":"x"
+    },
+    { "name": "Other canbus connectors",
+      "code": "occ",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
     { "name": "How long have you had your drive team?",
       "code": "tem",
       "type": "text",
       "size": 20,
       "maxSize": 50
-    },
-    { "name": "Did their comms fail at their last event?",
-      "code": "com",
-      "type": "bool"
     },
     { "name": "Do they have backup swerve modules/drivetrain motors?",
       "code": "dri",
@@ -62,27 +92,11 @@ var config_data = `
       "code": "sco",
       "type": "bool"
     },
-    { "name": "Do they have backup roborio?",
-      "code": "rob",
-      "type": "bool"
-    },
-    { "name": "Do they have backup PDH/PDP?",
-      "code": "pdh",
-      "type": "bool"
-    },
-    { "name": "Do they have backup motor controllers?",
-      "code": "mtr",
-      "type": "bool"
-    },
     { "name": "Which type of motor controllers",
       "code": "cot",
       "type": "text",
       "size": 20,
       "maxSize": 50
-    },
-    { "name": "Do they have a battery beak?",
-      "code": "bat",
-      "type": "bool"
     },
     { "name": "Wirestripper brand",
       "code": "wir",
@@ -102,7 +116,7 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "Wheel brand",
+    { "name": "Wheel type",
       "code": "whe",
       "type": "text",
       "size": 20,
