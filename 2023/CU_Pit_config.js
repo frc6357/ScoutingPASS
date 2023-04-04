@@ -44,13 +44,25 @@ var config_data = `
       },
       "defaultValue":"x"
     },
+    { "name": "Which type of motor controllers",
+      "code": "cot",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
+    { "name": "Wheel type",
+      "code": "whe",
+      "type": "text",
+      "size": 20,
+      "maxSize": 50
+    },
     { "name": "What is their power wire connectors",
       "code": "pwr",
       "type": "radio",
       "choices": {
         "a": "Anderson<br>",
         "w": "Wago<br>",
-        "d": "Direct Connect (Crimp or Sauter)<br>",
+        "d": "Direct Connect (Crimp or Saulder)<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
@@ -61,24 +73,24 @@ var config_data = `
       "size": 20,
       "maxSize": 50
     },
-    { "name": "What is their sensor canbus connectors",
+    { "name": "What is their sensor CAN bus connectors",
       "code": "can",
       "type": "radio",
       "choices": {
         "a": "Anderson<br>",
         "w": "Wago<br>",
-        "d": "Direct Connect (Crimp or Sauter)<br>",
+        "d": "Direct Connect (Crimp or Saulder)<br>",
         "x": "Other<br>"
       },
       "defaultValue":"x"
     },
-    { "name": "Other canbus connectors",
+    { "name": "Other CAN bus connectors",
       "code": "occ",
       "type": "text",
       "size": 20,
       "maxSize": 50
     },
-    { "name": "How long have you had your drive team?",
+    { "name": "How long has your current driver been driving?",
       "code": "tem",
       "type": "text",
       "size": 20,
@@ -88,15 +100,9 @@ var config_data = `
       "code": "dri",
       "type": "bool"
     },
-    { "name": "Do they have spare parts to fix their scoring mechanism?",
+    { "name": "Do you have spare parts for their custom mechanisms?",
       "code": "sco",
       "type": "bool"
-    },
-    { "name": "Which type of motor controllers",
-      "code": "cot",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
     },
     { "name": "Wirestripper brand",
       "code": "wir",
@@ -112,12 +118,6 @@ var config_data = `
     },
     { "name": "Screwdriver brand",
       "code": "scr",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
-    },
-    { "name": "Wheel type",
-      "code": "whe",
       "type": "text",
       "size": 20,
       "maxSize": 50
