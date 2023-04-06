@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023txcle",
+      "defaultValue": "2023txcmp2",
       "required": "true",
       "disabled": "true"
     },
