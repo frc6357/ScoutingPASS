@@ -138,8 +138,19 @@ var config_data = `
       },
       "defaultValue": "x"
     },
-    { "name": "Substation Pickup",
-      "code": "spu",
+    { "name": "Single Substation Pickup",
+      "code": "ssb",
+      "type": "radio",
+      "choices": {
+        "o": "Cones<br>",
+        "u": "Cubes<br>",
+        "b": "Both<br>",
+        "x": "Not Attempted"
+      },
+      "defaultValue": "x"
+    }
+    { "name": "Double Substation Pickup",
+      "code": "dss",
       "type": "radio",
       "choices": {
         "o": "Cones<br>",
