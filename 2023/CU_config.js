@@ -148,7 +148,7 @@ var config_data = `
         "x": "Not Attempted"
       },
       "defaultValue": "x"
-    }
+    },
     { "name": "Double Substation Pickup",
       "code": "dss",
       "type": "radio",
