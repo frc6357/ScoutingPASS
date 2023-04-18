@@ -103,24 +103,6 @@ var config_data = `
     { "name": "Do you have spare parts for their custom mechanisms?",
       "code": "sco",
       "type": "bool"
-    },
-    { "name": "Wirestripper brand",
-      "code": "wir",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
-    },
-    { "name": "Allen Key brand",
-      "code": "alk",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
-    },
-    { "name": "Screwdriver brand",
-      "code": "scr",
-      "type": "text",
-      "size": 20,
-      "maxSize": 50
     }
   ],
   "auton": [
