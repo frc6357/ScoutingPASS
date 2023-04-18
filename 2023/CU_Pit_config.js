@@ -8,7 +8,7 @@ var config_data = `
       "code": "t",
       "type": "number"
     },
-    { "name": "Width (inches)",
+    { "name": "Width (inches with bumpers)",
       "code": "wid",
       "type": "number"
     },
